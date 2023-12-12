@@ -4,7 +4,7 @@ const SNAKE_COLOUR = '#c2c2c2';
 const FOOD_COLOUR = '#e66916';
 
 //esta linea de codigo establece una coneccion a un servidor Socket.IO ejecutandose en la URL especificada.
-const socket = io('mp-blue.vercel.app');
+const socket = io('https://calm-basin-00487-82eef37bdabb.herokuapp.com/');
 
 //estas lineas de codigo esperan por varios mensajes que el servidor Socket.io podria enviar al cliente. el metodo socket.on() requiere dos variables: el nombre del evento por el que espera y una funcion callback que sera invocada cuando el evento es recibido. 
 socket.on('init', handleInit);
